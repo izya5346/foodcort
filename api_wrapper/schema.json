@@ -1,0 +1,47 @@
+{
+  "getRestoraunts": {
+    "url": "/restoraunt/list/",
+    "opts": {
+      "required": [
+        "city_id"
+      ],
+      "optional": [
+        "delivery_id",
+        "tag_id"
+      ]
+    }
+  },
+  "getCities": {
+    "url": "/city/list/",
+    "opts": {
+      "required": [],
+      "optional": []
+    }
+  },
+  "getDeliveries": {
+    "url": "/delivery/list/",
+    "opts": {
+      "required": [],
+      "optional": []
+    }
+  },
+  "getMenuCategories": {
+    "url": "/menu/head/",
+    "opts": {
+      "required": [
+        "restaraunt_id"
+      ],
+      "optional": []
+    }
+  },
+  "getMenu": {
+    "url": "/menu/body/",
+    "opts": {
+      "required": [
+        "restaraunt_id",
+        "category"
+      ],
+      "optional": []
+    }
+  }
+}

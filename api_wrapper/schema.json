@@ -1,6 +1,13 @@
 {
-  "getRestoraunts": {
-    "url": "/restoraunt/list/",
+  "getTags":{
+    "url": "/tag/list",
+    "opts": {
+      "required": [],
+      "optional": []
+    }
+  },
+  "getRestaurants": {
+    "url": "/restaurant/list/",
     "opts": {
       "required": [
         "city_id"
@@ -22,14 +29,16 @@
     "url": "/delivery/list/",
     "opts": {
       "required": [],
-      "optional": []
+      "optional": [
+        "restaurant_id"
+      ]
     }
   },
   "getMenuCategories": {
     "url": "/menu/head/",
     "opts": {
       "required": [
-        "restaraunt_id"
+        "restaurant_id"
       ],
       "optional": []
     }
@@ -38,8 +47,8 @@
     "url": "/menu/body/",
     "opts": {
       "required": [
-        "restaraunt_id",
-        "category"
+        "restaurant_id",
+        "category_id"
       ],
       "optional": []
     }

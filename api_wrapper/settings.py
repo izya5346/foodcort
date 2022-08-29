@@ -11,8 +11,6 @@ class Settings(BaseSettings):
     ngrok_region: str
     public_url: str = ''
     api_key: str = ''
-    tg_token: str
-    vk_token: str
 
     def get_db(cls):
         return f"{cls.db_engine}://{cls.db_username}:{cls.db_password}@{cls.db_name}.{cls.db_host}:{cls.db_port}"

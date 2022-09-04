@@ -74,7 +74,7 @@ class ApiWrapper:
 async def main():
     api = ApiWrapper()
     tags = await api.getTags()
-    tag = tags[0]
+    tag = tags[3]
     print(tag)
     cities = await api.getCities()
     city = cities[0]

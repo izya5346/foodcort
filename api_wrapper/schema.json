@@ -3,7 +3,7 @@
     "url": "/tag/list",
     "opts": {
       "required": [],
-      "optional": []
+      "optional": ["city_id"]
     }
   },
   "getRestaurants": {
@@ -52,5 +52,14 @@
       ],
       "optional": []
     }
-  }
+  },
+  "getLink": {
+    "url": "/link/get/",
+    "opts": {
+      "required": [
+        "restaurant_id"
+      ],
+      "optional": []
+    }
+}
 }
